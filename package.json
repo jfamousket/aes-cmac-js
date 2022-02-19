@@ -1,0 +1,9 @@
+{
+  "name": "typescript",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "@types/sjcl": "^1.0.30",
+    "sjcl": "^1.0.8"
+  }
+}
