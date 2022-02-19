@@ -1,11 +1,12 @@
 {
-  "name": "typescript",
-  "version": "0.0.0",
-  "private": true,
+  "name": "aes-cmac-js",
+  "description": "AES CMAC implementation in pure js",
+  "version": "1.0.0",
+  "private": false,
   "dependencies": {},
   "main": "aes-cmac.js",
   "types": "aes-cmac.d.ts",
-  "repository": "git@personal.git:jfamousket/aes-cmac-js.git",
+  "repository": "https://github.com/jfamousket/aes-cmac-js.git",
   "author": "jfamousket <jfamousket@gmail.com>",
   "license": "MIT",
   "devDependencies": {
