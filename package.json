@@ -1,7 +1,7 @@
 {
   "name": "aes-cmac-js",
   "description": "AES CMAC implementation in pure js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": false,
   "dependencies": {},
   "main": "aes-cmac.js",
