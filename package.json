@@ -3,14 +3,50 @@
   "description": "AES CMAC implementation in pure js",
   "version": "1.0.1",
   "private": false,
+  "typings": "dist/aes-cmac.d.ts",
+  "main": "dist/aes-cmac.js",
+  "keywords": [
+    "aes",
+    "cmac",
+    "encrypt",
+    "decrypt",
+    "block",
+    "cipher"
+  ],
   "dependencies": {},
-  "main": "aes-cmac.js",
-  "types": "aes-cmac.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "ts-standard --fix && ava",
+    "pretest": "yarn build",
+    "postbuild": "cp -t ./dist ./sjcl/*"
+  },
   "repository": "https://github.com/jfamousket/aes-cmac-js.git",
   "author": "jfamousket <jfamousket@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "ava": "^4.2.0",
     "prettier": "^2.5.1",
+    "ts-node": "^10.7.0",
+    "ts-standard": "*",
     "typescript": "^4.5.5"
+  },
+  "ts-standard": {
+    "ignore": [
+      "dist",
+      "sjcl/**",
+      "sjcl.d.ts",
+      "tests"
+    ]
+  },
+  "ava": {
+    "extensions": [
+      "ts"
+    ],
+    "require": [
+      "ts-node/register"
+    ],
+    "files": [
+      "tests/**/*"
+    ]
   }
 }
